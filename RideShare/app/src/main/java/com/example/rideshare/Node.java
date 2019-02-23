@@ -9,7 +9,7 @@ public class Node {
 
     Node(User v ){
         this.right =null;
-        this.left = null;   
+        this.left = null;
         this.value=v;
     }
 }
