@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private static int SPLASH_TIME_OUT = 1000;
 
-    BST mTree;
+   
     TextView mPassword;
     TextView mCPassword;
     TextView mFirstName;
