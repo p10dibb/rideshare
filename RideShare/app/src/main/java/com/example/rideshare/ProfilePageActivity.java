@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class ProfilePageActivity extends AppCompatActivity {
+        TextView mName;
 
 
     @Override
