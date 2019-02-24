@@ -34,7 +34,8 @@
 
         <activity
             android:name=".FindRideActivity"
-            android:label="@string/title_activity_find_ride"></activity>
+            android:label="@string/title_activity_find_ride"
+            android:windowSoftInputMode="adjustPan"> </activity>
         <activity android:name=".SignInActivity" />
         <activity
             android:name=".ProfilePageActivity"

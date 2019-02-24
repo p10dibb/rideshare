@@ -39,9 +39,8 @@ public class FindRideActivity extends FragmentActivity implements OnMapReadyCall
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
         LatLng pullman = new LatLng(46.728028, -117.165713);
         mMap.addMarker(new MarkerOptions().position(pullman).title("Marker in Pullman"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(pullman, 10F));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(pullman, 13F));
     }
 }
