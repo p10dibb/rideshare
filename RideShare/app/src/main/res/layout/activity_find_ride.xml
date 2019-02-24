@@ -1,56 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:background="@drawable/gradient"
+    tools:context=".FindRideActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical"
-        android:layout_weight="80">
+    <TextView
+        android:id="@+id/findRideTextView"
+        android:layout_width="241dp"
+        android:layout_height="54dp"
+        android:background="@drawable/mybutton"
+        android:gravity="center"
+        android:text="Find A Ride"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
 
-        <TextView
-            android:id="@+id/blankView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="7"
-            android:text="" />
+    <EditText
+        android:id="@+id/enterStartingAddressTextView"
+        android:layout_width="304dp"
+        android:layout_height="42dp"
+        android:background="@drawable/edit_text"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Enter Starting Address"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
 
-        <EditText
-            android:id="@+id/searchStartPointTextView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="left"
-            android:hint="  Enter Starting Address"
-            android:layout_weight="40"
-            android:background="#c0c8d6"/>
+    <EditText
+        android:id="@+id/enterDestinationAddressTextView"
+        android:layout_width="304dp"
+        android:layout_height="42dp"
+        android:background="@drawable/edit_text"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Enter Destination Address"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
 
-        <TextView
-            android:id="@+id/blankView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="13"
-            android:text="" />
+    <TextView
+        android:id="@+id/mapLayoutTextView"
+        android:layout_width="330dp"
+        android:layout_height="341dp"
+        android:background="@drawable/edit_text"
+        android:gravity="center"
+        android:text="Google Maps here connecting two locations with estimated time and other info!"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/searchEndPointTextView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="left"
-            android:hint="  Enter Destination Address"
-            android:layout_weight="40"
-            android:background="#c0c8d6"
-            />
-    </LinearLayout>
+    <Button
+        android:id="@+id/findRideButtonInFindRidePage"
+        android:layout_width="162dp"
+        android:layout_height="76dp"
+        android:text="Search"
+        android:background="@drawable/mybutton"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897" />
 
-    <fragment
-        xmlns:map="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/map"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="10"
-        tools:context=".FindRideActivity"/>
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

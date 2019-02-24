@@ -2,13 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.example.rideshare">
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality.
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="ANDROID.PERMISSION.INTERNET" />
+    <uses-permission android:name="ANDROID.PERMISSION.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 
     <dist:module dist:instant="true" />
 
@@ -19,7 +22,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -33,21 +35,25 @@
             android:value="AIzaSyDhniP3WlREOpFNkEKsleRYvEmKGm11fAg" />
 
         <activity
-            android:name=".GoogleMapsActivity"
-            android:label="@string/title_activity_google_maps"></activity>
-        <activity android:name=".CreateRideActivity" />
-        <activity
-            android:name=".FindRideActivity"
-            android:windowSoftInputMode="adjustPan" />
-        <activity android:name=".SignInActivity" />
+            android:name=".CreateRideActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ProfilePageActivity"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".SignInActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".FindRideActivity">
+
+        </activity>
+        <activity
             android:name=".CreateAccountActivity"
             android:label="@string/title_activity_create_account"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

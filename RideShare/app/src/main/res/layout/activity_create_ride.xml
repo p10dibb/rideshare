@@ -12,10 +12,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <fragment
-            class="com.google.android.gms.maps.SupportMapFragment"
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            tools:context=".MapsActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
 
     </LinearLayout>
 
@@ -84,7 +87,7 @@
         android:layout_width="187dp"
         android:layout_height="58dp"
         android:text="Create Ride"
-        android:background="@drawable/edit_text"
+        android:background="@drawable/mybutton"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
