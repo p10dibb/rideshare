@@ -1,6 +1,12 @@
 package com.example.rideshare;
 
+import androidx.appcompat.app.AppCompatActivity;
+import android.view.View;
 import android.os.Bundle;
+import android.content.Intent;
+import android.view.MenuItem;
+import android.view.Menu;
+import android.widget.Button;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -12,26 +18,27 @@ import android.view.View;
 
 public class CreateAccountActivity extends AppCompatActivity {
 
+    private Button createButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
 
+        createButton = (Button) findViewById(R.id.createAccountButton2);
 
-
-        /*
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        createButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View v){
+                createButtonClicked();
             }
         });
-        */
+    }
+
+    public void createButtonClicked()
+    {
+        Intent segueToProfilePage = new Intent(this, ProfilePageActivity.class);
+        startActivity(segueToProfilePage);
     }
 
 }
