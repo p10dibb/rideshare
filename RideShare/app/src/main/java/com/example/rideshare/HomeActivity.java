@@ -12,10 +12,22 @@ public class HomeActivity extends AppCompatActivity {
 
     private Button createAccountButton, signInButton;
 
+    private Button testMapsButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        testMapsButton = (Button) findViewById(R.id.testGoogleMapsButton);
+
+        testMapsButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v)
+            {
+                testMapsButtonClicked();
+            }
+        });
 
         createAccountButton = (Button) findViewById(R.id.createAccountButton);
         signInButton = (Button) findViewById(R.id.signInButton);
@@ -34,6 +46,12 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void testMapsButtonClicked()
+    {
+        Intent segueToMaps = new Intent (this, GoogleMapsActivity.class);
+        startActivity(segueToMaps);
     }
 
     public void createAccountButtonClicked()
