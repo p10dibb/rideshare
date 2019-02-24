@@ -44,7 +44,7 @@ public class Trips {
     }
 
     public String getDestination(){
-        return getDestination();
+        return destination;
     }
 
     public  String getDriverName(){

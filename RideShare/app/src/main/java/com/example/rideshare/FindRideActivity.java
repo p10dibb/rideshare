@@ -16,14 +16,16 @@ public class FindRideActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_ride);
-                mLoc=(TextView) findViewById(R.id.findRideButtonInFindRidePage);
-                mDest=(TextView)findViewById(R.id.destinationAddressTextEdit);
+                mLoc=(TextView) findViewById(R.id.enterStartingAddressTextView);
+                mDest=(TextView)findViewById(R.id.enterDestinationAddressTextView);
     }
 
     public void SearchRide(View view) {
-        String send=mDest.getText().toString()+mLoc.getText().toString();
 
+        String send=mDest.getText().toString()+mLoc.getText().toString();
+String temp=send;
         Intent segueToCreateRide = new Intent(this, SearchResultActivity.class);
+        segueToCreateRide.putExtra("key",send);
         startActivity(segueToCreateRide);
     }
 }
