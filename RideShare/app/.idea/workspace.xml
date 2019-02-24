@@ -9,14 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15983b8c-af3f-4e96-b182-b1787a1d9d5a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rideshare/CreateAccountActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rideshare/CreateAccountActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rideshare/HomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rideshare/HomeActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rideshare/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rideshare/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_sign_in.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_sign_in.xml" afterDir="false" />
-    </list>
+    <list default="true" id="15983b8c-af3f-4e96-b182-b1787a1d9d5a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,8 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/rideshare/CreateAccountActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1037">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="160">
+              <caret line="139" column="50" selection-start-line="139" selection-start-column="47" selection-end-line="139" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -433,8 +426,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/rideshare/CreateAccountActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1037">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="160">
+          <caret line="139" column="50" selection-start-line="139" selection-start-column="47" selection-end-line="139" selection-end-column="50" />
         </state>
       </provider>
     </entry>
