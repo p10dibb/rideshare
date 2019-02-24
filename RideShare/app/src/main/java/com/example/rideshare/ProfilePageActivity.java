@@ -47,7 +47,7 @@ public class ProfilePageActivity extends AppCompatActivity {
     }
 
     public void goToCreateRide(View view) {
-        Intent segueToCreateRide = new Intent(this, CreateAccountActivity.class);
+        Intent segueToCreateRide = new Intent(this, CreateRideActivity.class);
         startActivity(segueToCreateRide);
     }
 }
