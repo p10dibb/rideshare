@@ -82,4 +82,9 @@ public class SignInActivity extends AppCompatActivity {
         Intent segueToProfilePage = new Intent(this, ProfilePageActivity.class);
         startActivity(segueToProfilePage);
     }
+
+    public void Skip(View view) {
+        Intent segueToProfilePage = new Intent(this, ProfilePageActivity.class);
+        startActivity(segueToProfilePage);
+    }
 }
