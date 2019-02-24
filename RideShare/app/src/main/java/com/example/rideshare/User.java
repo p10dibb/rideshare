@@ -28,7 +28,7 @@ public class User {
     public boolean SetEmail(String name){
         char dotCheck[]= name.toCharArray();
 
-        if(name.contains("@")&&(dotCheck[dotCheck.length-2]=='.'||dotCheck[dotCheck.length-3]=='.')){
+        if(name.contains("@")&&(dotCheck[dotCheck.length-3]=='.'||dotCheck[dotCheck.length-4]=='.')){
             this.email=name;
             return true;
         }
