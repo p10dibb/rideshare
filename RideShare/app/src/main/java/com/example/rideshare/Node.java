@@ -8,8 +8,8 @@ public class Node {
 
 
     Node(User v ){
-        this.right =null;
+        right =null;
         this.left = null;
-        this.value=v;
+       //.value=v;
     }
 }

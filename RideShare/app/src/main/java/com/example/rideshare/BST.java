@@ -11,7 +11,7 @@ public class BST {
 
     public boolean InsertValue(User v) {
 
-        this.root = this.addRecursive(root, v);
+        this.root = addRecursive(root, v);
 
         return true;
     }
@@ -20,7 +20,8 @@ public class BST {
         if (current == null) {
             return new Node(value);
         }
-
+        return new Node(value);
+/*
         if (value.GetFirstName().compareTo(current.value.GetFirstName()) ==-1 ) {
             current.left = addRecursive(current.left, value);
         } else if (value.GetFirstName().compareTo(current.value.GetFirstName())==1) {
@@ -55,5 +56,6 @@ public class BST {
         return containsNodeRecursive(root, value);
     }
 
+*/
 
-}
+}}

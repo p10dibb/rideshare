@@ -37,20 +37,20 @@ public class User {
 
     //checks for all char are digits and length =10
     public boolean SetPhone(String phone){
-       char numCheck[]=phone.toCharArray();
-       if(numCheck.length==10) {
-           for (int i = 0; i < numCheck.length; i++) {
-               if (numCheck[i] < '0' || numCheck[i] > '9') {
-                   return false;
-               }
-           }
+        char numCheck[]=phone.toCharArray();
+        if(numCheck.length==10) {
+            for (int i = 0; i < numCheck.length; i++) {
+                if (numCheck[i] < '0' || numCheck[i] > '9') {
+                    return false;
+                }
+            }
 
-           this.phone=phone;
+            this.phone=phone;
             return true;
-       }
-       else {
-           return false;
-       }
+        }
+        else {
+            return false;
+        }
     }
 
     //CHECKS FOR UPPERCASE character and  length =   6<=L<=20
