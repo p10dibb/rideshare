@@ -32,4 +32,9 @@ public class HomeActivity extends AppCompatActivity {
         Intent segueToCreateAccount = new Intent(this, CreateAccountActivity.class);
         startActivity(segueToCreateAccount);
     }
+
+    public void Tester(View view) {
+        Intent goToCreateAccount = new Intent(this, Test2.class);
+        startActivity(goToCreateAccount);
+    }
 }
