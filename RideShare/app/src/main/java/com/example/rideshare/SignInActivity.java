@@ -48,6 +48,8 @@ public class SignInActivity extends AppCompatActivity {
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         String Password =String.valueOf(dataSnapshot.getValue());
 
+
+
                         if(Password.equals("null")){
                             mNameLog .setText("you are not Registered");
                         }
@@ -91,4 +93,7 @@ public class SignInActivity extends AppCompatActivity {
         startActivity(segueToProfilePage);
 
     }
+
+
+
 }

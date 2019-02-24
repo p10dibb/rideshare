@@ -14,6 +14,7 @@ import java.util.List;
 
 public class ProfilePageActivity extends AppCompatActivity {
 
+    TextView mName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +48,7 @@ public class ProfilePageActivity extends AppCompatActivity {
     }
 
     public void goToCreateRide(View view) {
-        Intent segueToCreateRide = new Intent(this, CreateRideActivity.class);
+        Intent segueToCreateRide = new Intent(this, CreateAccountActivity.class);
         startActivity(segueToCreateRide);
     }
 }
