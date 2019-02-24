@@ -10,27 +10,19 @@ import android.widget.Button;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private Button createButton, signInButton;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        createButton = (Button) findViewById(R.id.createAccountButton);
-        signInButton = (Button) findViewById(R.id.signInButton);
+        button = (Button) findViewById(R.id.createAccountButton);
 
-        createButton.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
                 createAccountButtonClicked();
-            }
-        });
-
-        signInButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                signInButtonClicked();
             }
         });
     }
@@ -41,9 +33,8 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(segueToCreateAccount);
     }
 
-    public void signInButtonClicked()
-    {
-        Intent segueToSignInPage = new Intent(this, SignInActivity.class);
-        startActivity(segueToSignInPage);
+    public void Tester(View view) {
+        Intent goToCreateAccount = new Intent(this, Test2.class);
+        startActivity(goToCreateAccount);
     }
 }

@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.303" />
 
     <Button
-        android:id="@+id/signInButton"
+        android:id="@+id/button3"
         android:layout_width="178dp"
         android:layout_height="65dp"
         android:background="@drawable/mybutton"
@@ -47,5 +47,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/createAccountButton"
         app:layout_constraintVertical_bias="0.199" />
+
+    <Button
+        android:id="@+id/Test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="104dp"
+        android:text="Button"
+        android:onClick="Tester"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

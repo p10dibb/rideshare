@@ -4,9 +4,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private static int SPLASH_TIME_OUT = 1000;
+    private static int SPLASH_TIME_OUT = 2000;
+
+    BST mTree;
+    TextView mPassword;
+    TextView mCPassword;
+    TextView mFirstName;
+    TextView mLastName;
+    TextView mEmail;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +30,11 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         }, SPLASH_TIME_OUT);
+        mTree=new BST();
+    }
+
+    public void RunRegister(View view) {
+
+
     }
 }
