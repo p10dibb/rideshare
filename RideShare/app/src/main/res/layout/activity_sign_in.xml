@@ -20,7 +20,7 @@
         tools:srcCompat="@mipmap/ic_launcher_round" />
 
     <EditText
-        android:id="@+id/signInEmailText"
+        android:id="@+id/signInName"
         android:layout_width="310dp"
         android:layout_height="60dp"
         android:background="@drawable/edit_text"
