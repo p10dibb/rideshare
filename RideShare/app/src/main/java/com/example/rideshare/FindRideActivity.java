@@ -9,8 +9,8 @@ import android.widget.TextView;
 
 public class FindRideActivity extends AppCompatActivity {
 
-    TextView mLoc;
-    TextView mDest;
+    //TextView mLoc;
+    //TextView mDest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

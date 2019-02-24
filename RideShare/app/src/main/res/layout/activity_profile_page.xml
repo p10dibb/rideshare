@@ -11,7 +11,7 @@
         android:id="@+id/view"
         android:layout_width="wrap_content"
         android:layout_height="301dp"
-        android:background="@drawable/gradient"
+        android:background="@drawable/benditlikebecham"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -52,9 +52,9 @@
         android:layout_height="55dp"
         android:background="@drawable/mybutton"
         android:gravity="center"
+        android:onClick="GotofindRide"
         android:text="Find Ride"
         android:textSize="20sp"
-        android:onClick="GotofindRide"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
@@ -68,9 +68,9 @@
         android:layout_height="55dp"
         android:background="@drawable/mybutton"
         android:gravity="center"
+        android:onClick="goToCreateRide"
         android:text="Create Ride"
         android:textSize="20sp"
-        android:onClick="goToCreateRide"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"
@@ -78,56 +78,99 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.029" />
 
+    <View
+        android:id="@+id/view3"
+        android:layout_width="409dp"
+        android:layout_height="425dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983" />
+
     <TextView
         android:id="@+id/previousRideTextView"
-        android:layout_width="343dp"
-        android:layout_height="75dp"
-        android:text="Your Previous Rides:"
+        android:layout_width="380dp"
+        android:layout_height="54dp"
+        android:background="@drawable/benditlikebecham"
+        android:text="Your Rides:"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintHorizontal_bias="0.419"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.513" />
-
-    <ScrollView
-        android:layout_width="395dp"
-        android:layout_height="305dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.812"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/previousRideDescriptionTextView"
-                android:layout_width="384dp"
-                android:layout_height="266dp"
-                android:gravity="center"
-                android:text="Your previous rides will appear here!"
-                android:textSize="25sp"
-                android:textStyle="italic"
-                app:layout_constraintHorizontal_bias="0.105"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.705" />
-        </LinearLayout>
-    </ScrollView>
+        app:layout_constraintVertical_bias="0.466" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="295dp" />
+        android:id="@+id/driverOrPassengerTextView"
+        android:layout_width="149dp"
+        android:layout_height="35dp"
+        android:text="Driver/Passenger"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.554" />
+
+    <TextView
+        android:id="@+id/costTextViewProfilePage"
+        android:layout_width="134dp"
+        android:layout_height="38dp"
+        android:text="Cost: $$"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <TextView
+        android:id="@+id/startAddressProfilePage"
+        android:layout_width="390dp"
+        android:layout_height="35dp"
+        android:background="@drawable/benditlikebecham"
+        android:text="Start Address:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613" />
+
+    <TextView
+        android:id="@+id/destinationAdressProfilePage"
+        android:layout_width="389dp"
+        android:layout_height="34dp"
+        android:background="@drawable/benditlikebecham"
+        android:text="Destination Address:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="379dp"
+        android:layout_height="182dp"
+        android:gravity="center"
+        android:text="If there's more than one ride, then it would appear here on a scroll view"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

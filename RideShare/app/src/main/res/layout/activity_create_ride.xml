@@ -7,26 +7,11 @@
     android:background="@drawable/gradient"
     tools:context=".CreateRideActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/map"
-            tools:context=".MapsActivity"
-            android:name="com.google.android.gms.maps.SupportMapFragment" />
-
-    </LinearLayout>
-
     <TextView
         android:id="@+id/createRideTextView"
         android:layout_width="316dp"
         android:layout_height="43dp"
-        android:background="@drawable/mybutton"
+        android:background="@drawable/benditlikebecham"
         android:gravity="center"
         android:text="Create A Ride:"
         android:textSize="25sp"
@@ -86,16 +71,31 @@
         android:id="@+id/createRideButtonFinal"
         android:layout_width="187dp"
         android:layout_height="58dp"
-        android:text="Create Ride"
         android:background="@drawable/mybutton"
+        android:text="Create Ride"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:onClick="CreateRideButtonClicked"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.931" />
+
+    <TextView
+        android:id="@+id/googleMapsAppearHereTextView"
+        android:layout_width="354dp"
+        android:layout_height="728dp"
+        android:gravity="center"
+        android:text="Google Maps appear here in the backgound. It will connect two addresses and give estimated time of traval and other info!"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

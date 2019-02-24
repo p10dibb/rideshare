@@ -7,4 +7,44 @@
     android:background="@drawable/gradient"
     tools:context=".SelectRideActivity">
 
+    <TextView
+        android:id="@+id/requestRideTextView"
+        android:layout_width="323dp"
+        android:layout_height="434dp"
+        android:background="@drawable/benditlikebecham"
+        android:text="You have successfully requested this ride. The driver will get back to you to discuss more about this!"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <TextView
+        android:id="@+id/driverContactInfo"
+        android:layout_width="317dp"
+        android:layout_height="175dp"
+        android:text="Here's his/her contact info: \nPhone Number: 111-222-3333"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327" />
+
+    <Button
+        android:id="@+id/segueToProfilePageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:background="@drawable/benditlikebecham"
+        android:textStyle="bold"
+        android:onClick="TakeMeBackToMyProfilePageButtonClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
 </androidx.constraintlayout.widget.ConstraintLayout>
