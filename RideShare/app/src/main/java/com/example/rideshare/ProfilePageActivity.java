@@ -9,39 +9,34 @@ import android.view.Menu;
 import android.widget.Button;
 
 public class ProfilePageActivity extends AppCompatActivity {
-    private Button createRideButton, findRideButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_page);
 
-        createRideButton = (Button) findViewById(R.id.createRideButton);
-        findRideButton = (Button) findViewById(R.id.findRideButton);
 
-        createRideButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                createRideButtonClicked();
-            }
-        });
 
-        findRideButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                createRideButtonClicked();
-            }
-        });
     }
 
     //segues to Create Ride Page
     public void createRideButtonClicked() {
-        Intent segueToCreateRide = new Intent(this, CreateRideActivity.class);
-        startActivity(segueToCreateRide);
+
     }
 
     public void findRideButtonClicked() {
-        Intent segueToFindRide = new Intent (this, FindRideActivity.class);
+
+    }
+
+    public void GotofindRide(View view) {
+        Intent segueToFindRide;
+        segueToFindRide = new Intent (this, FindRideActivity.class);
         startActivity(segueToFindRide);
+    }
+
+    public void goToCreateRide(View view) {
+        Intent segueToCreateRide = new Intent(this, CreateRideActivity.class);
+        startActivity(segueToCreateRide);
     }
 }
