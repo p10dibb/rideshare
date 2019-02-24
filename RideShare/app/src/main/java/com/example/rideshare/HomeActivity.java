@@ -37,4 +37,9 @@ public class HomeActivity extends AppCompatActivity {
         Intent goToCreateAccount = new Intent(this, Test2.class);
         startActivity(goToCreateAccount);
     }
+
+    public void GoToSignin(View view) {
+        Intent goToCreateAccount = new Intent(this, SignInActivity.class);
+        startActivity(goToCreateAccount);
+    }
 }

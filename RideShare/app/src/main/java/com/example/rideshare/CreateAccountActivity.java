@@ -1,5 +1,6 @@
 package com.example.rideshare;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -84,6 +85,7 @@ public class CreateAccountActivity extends AppCompatActivity {
 
                 if (mFirstName.getText().toString().equals("")){
                     output=output+" First Name is empty";
+                    mFirstName.setText("");
                     fail++;
                 }
                 else{
@@ -91,6 +93,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                 }
                 if(mLastName.getText().toString().equals("")) {
                     output=output+ " LastName is empty";
+                    mLastName.setText("");
                     fail++;
                 }
                 else{
@@ -100,6 +103,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                 if(!temp.SetEmail(mEmail.getText().toString())){
 
                     output=output+" Email not valid";
+                    mEmail.setText("");
                     fail++;
                 }
 
@@ -108,10 +112,13 @@ public class CreateAccountActivity extends AppCompatActivity {
                     if (!temp.SetPassword(mPassword.getText().toString())){
                         output=output+" invalid Password";
                         fail++;
+                        mPassword.setText("");
+
                     }
                 }
                 else{
                     output=output+ " Passwords don't match";
+                    mPassword.setText("");
                     fail++;
                 }
 
@@ -127,21 +134,23 @@ public class CreateAccountActivity extends AppCompatActivity {
                     mRefl =database.getReference(tempkey);
                     mRefl.setValue(child);
 
-                 // mRefl  =database.getReference(key);
-                 //   mRefl.setValue(Value);
+                    goToProfile();
 
 
                     output="Registration succesful";
 
+
                 }
-                mFirstName.setText(output);
+
 
 
             }
         });
 
     }
-    public void RunRegister(View view) {
+    public void goToProfile(){
+    Intent goToCreateAccount = new Intent(this,  ProfilePageActivity.class);
+    startActivity(goToCreateAccount);
 
     }
 
