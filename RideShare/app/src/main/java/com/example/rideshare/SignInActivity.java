@@ -22,6 +22,8 @@ public class SignInActivity extends AppCompatActivity {
     private Button loginButton;
     TextView mNameLog;
     TextView mPasswordLog;
+    String mPassvalue="Hello world";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +41,7 @@ public class SignInActivity extends AppCompatActivity {
 
                 FirebaseDatabase database =FirebaseDatabase.getInstance();
                 DatabaseReference mRefd ;
-                String tempkey=mNameLog.getText().toString();
+                final String tempkey=mNameLog.getText().toString();
                 mRefd =database.getReference(tempkey);
                 mRefd.addValueEventListener(new ValueEventListener() {
                     @Override
@@ -50,7 +52,9 @@ public class SignInActivity extends AppCompatActivity {
                             mNameLog .setText("you are not Registered");
                         }
                         else if(mPasswordLog.getText().toString().equals(Password)){
+                            mPassvalue=tempkey;
                             loginButtonClicked();
+
                         }
                         else{
                             mNameLog.setText("incorrect Password");
@@ -79,7 +83,12 @@ public class SignInActivity extends AppCompatActivity {
 
     public void loginButtonClicked()
     {
+
+
+
         Intent segueToProfilePage = new Intent(this, ProfilePageActivity.class);
+        segueToProfilePage.putExtra("key",mPassvalue);
         startActivity(segueToProfilePage);
+
     }
 }
