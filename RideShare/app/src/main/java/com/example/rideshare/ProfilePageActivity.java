@@ -7,15 +7,25 @@ import android.content.Intent;
 import android.view.MenuItem;
 import android.view.Menu;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class ProfilePageActivity extends AppCompatActivity {
+        TextView mName;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_page);
+        mName=(TextView) findViewById(R.id.fullNameTextView);
 
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            String value = extras.getString("key");
+            mName.setText(value);
+            //The key argument here must match that used in the other activity
+        }
 
 
     }
