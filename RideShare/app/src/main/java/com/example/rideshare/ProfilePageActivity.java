@@ -22,21 +22,29 @@ public class ProfilePageActivity extends AppCompatActivity {
         createRideButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-               // createRideButtonClicked();
+                createRideButtonClicked();
             }
         });
 
         findRideButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              //  findRideButtonClicked();
+                findRideButtonClicked();
             }
         });
     }
 
     //segues to Create Ride Page
-
+    public void createRideButtonClicked()
+    {
+        Intent segueToCreateRide = new Intent(this, FindRideActivity.class);
+        startActivity(segueToCreateRide);
+    }
 
     //segues to Find Ride page
+    public void findRideButtonClicked() {
+        Intent segueToFindRide = new Intent(this, FindRideActivity.class);
+        startActivity(segueToFindRide);
+    }
 
 }
