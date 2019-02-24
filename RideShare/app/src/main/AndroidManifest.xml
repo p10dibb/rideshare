@@ -22,10 +22,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".FindRide2"
-            android:label="@string/title_activity_find_ride2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".SearchResultActivity"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -47,7 +44,7 @@
         <activity
             android:name=".SignInActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".FindRideActivity"></activity>
+        <activity android:name=".FindRideActivity" />
         <activity
             android:name=".CreateAccountActivity"
             android:label="@string/title_activity_create_account"

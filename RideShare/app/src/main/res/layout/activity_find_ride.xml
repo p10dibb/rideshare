@@ -75,6 +75,7 @@
         android:background="@drawable/mybutton"
         android:textStyle="bold"
         android:textSize="25sp"
+        android:onClick="SearchRide"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
